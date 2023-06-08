@@ -1,4 +1,6 @@
+import * as React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar, Button } from 'react-native';
+// import { Button } from '@mui/material/Button';
 import { useStyling } from '../styles/style.js';
 
 //The Home component to load in and exporting it for the navigation
