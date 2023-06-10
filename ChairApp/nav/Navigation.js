@@ -17,7 +17,6 @@ export function Navigation() {
         name="Welcome" 
         component={Welcome}
         options={{
-          title: 'Eco Lounge Chair',
           headerStyle: {
             backgroundColor: 'white',
           },
@@ -31,7 +30,6 @@ export function Navigation() {
         name="Home" 
         component={Home}
         options={{
-          title: 'Eco Lounge Chair',
           headerStyle: {
             backgroundColor: 'white',
           },

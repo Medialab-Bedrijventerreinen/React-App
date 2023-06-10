@@ -1,10 +1,29 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { Navigation } from './nav/Navigation.js';
 import React from 'react';
-import { useStyling } from './styles/style.js';
+import { useCallback } from 'react';
+import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const styling = useStyling;
+  const [fontsLoaded] = useFonts({
+    'Cookie-Regular': require('./assets/fonts/cookie/Cookie-Regular.ttf'),
+    'Quicksand-500': require('./assets/fonts/quicksand/Quicksand-Medium.ttf'),
+    'Quicksand-600': require('./assets/fonts/quicksand/Quicksand-SemiBold.ttf'),
+    'Quicksand-700': require('./assets/fonts/quicksand/Quicksand-Bold.ttf'),
+  });
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
 
   return (
     <NavigationContainer>

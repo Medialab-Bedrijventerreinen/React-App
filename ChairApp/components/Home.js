@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar, Button } from 'react-native';
-// import { Button } from '@mui/material/Button';
 import { useStyling } from '../styles/style.js';
 
 //The Home component to load in and exporting it for the navigation
@@ -10,7 +9,7 @@ export const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
-        <Text style={styling.header}>Homepage</Text>
+        <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Homepage</Text>
         <Button
           title="Go to Welcome"
           onPress={() => navigation.navigate('Welcome')}
