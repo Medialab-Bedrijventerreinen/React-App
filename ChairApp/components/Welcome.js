@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, StatusBar, Button } from 'react-native';
-// import { Button } from '@mui/material/Button';
+import { StyleSheet, Text, View, SafeAreaView, StatusBar} from 'react-native';
+import { NativeBaseProvider, Button, Input } from "native-base";
 import { useStyling } from '../styles/style.js';
 
 //The Home component to load in and exporting it for the navigation
@@ -8,20 +8,27 @@ export const Welcome = ({navigation}) => {
   const styling = useStyling;
 
   return (
-    <SafeAreaView style={styles.container}>
+    <NativeBaseProvider>
       <View style={styles.container}>
-        <Text style={styling.header}>Welcome page</Text>
+        <Text style={styling.header}>Welkom!</Text>
+        <Text stle={styling.paragraph}>
+          Vul de 4-cijferige code in, deze is te vinden in de binnenkant van de
+          stoel.
+        </Text>
+        <Input mx="3" placeholder="Input" w="10%"></Input>
+        <Text stle={styling.paragraph}>
+          Om behalve lekker in de Eco Lounge chair neer te ploffen maak ook gebruik van alle functies die de stoel te bieden heeft
+        </Text>
         <Button
-          title="Go to Home"
-          onPress={() => navigation.navigate('Home')}
-        />
+          size="sm"
+          variant="subtle"
+          colorScheme="secondary"
+          onPress={() => navigation.navigate("Home")}
+        >
+          Go to Home
+        </Button>
       </View>
-    </SafeAreaView>
-
-    // <View style={styles.container}>
-    //   <Text style={styling.header}>Homepage</Text>
-    //   <StatusBar style="auto" />
-    // </View>
+    </NativeBaseProvider>
   );
 }
 
