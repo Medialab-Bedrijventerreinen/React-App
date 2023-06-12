@@ -24,9 +24,6 @@ export const Welcome = ({navigation}) => {
         Om behalve lekker in de Eco Lounge chair neer te ploffen maak ook gebruik van alle functies die de stoel te bieden heeft
       </Text>
       <Button
-        size="sm"
-        variant="subtle"
-        colorScheme="primary"
         onPress={() => navigation.navigate("Home")}
       >
         Start

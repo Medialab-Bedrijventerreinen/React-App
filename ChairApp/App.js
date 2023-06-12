@@ -4,7 +4,7 @@ import React from 'react';
 import { useCallback } from 'react';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import { NativeBaseProvider } from 'native-base';
+import { NativeBaseProvider, extendTheme } from 'native-base';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -26,8 +26,24 @@ export default function App() {
     return null;
   }
 
+  const theme = extendTheme({
+    components: {
+      Button: {
+        // Can simply pass default props to change default behaviour of components.
+        baseStyle: {
+          rounded: 'md',
+        },
+        defaultProps: {
+          backgroundColor: '#7EA796',
+          color: '#E5EDEA',
+          fontFamily: 'Quicksand-500', //Werkt op de een of andere manier niet
+        },
+      },
+    }
+  })
+
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider theme={theme}>
       <NavigationContainer>
         <Navigation />
       </NavigationContainer>
