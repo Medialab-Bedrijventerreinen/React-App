@@ -2,21 +2,24 @@ import * as React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
 import { Button } from "native-base";
 import { useStyling } from '../styles/style.js';
+import { LinearGradient } from 'expo-linear-gradient';
 
 //The Home component to load in and exporting it for the navigation
 export const Themes = ({navigation}) => {
   const styling = useStyling;
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.container}>
-        <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Themes</Text>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#EAC7B3', 'transparent']}
+        style={[styles.container, styles.background]}
+      >
+        <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Thema's</Text>
         <Button
           title="Go to Welcome"
           onPress={() => navigation.navigate('Home')}
         >Go back</Button>
-      </View>
-    </SafeAreaView>
+      </LinearGradient>
   );
 }
 
