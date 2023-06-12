@@ -4,6 +4,7 @@ import React from 'react';
 import { useCallback } from 'react';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { NativeBaseProvider } from 'native-base';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -26,9 +27,11 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <Navigation />
-    </NavigationContainer>
+    <NativeBaseProvider>
+      <NavigationContainer>
+        <Navigation />
+      </NavigationContainer>
+    </NativeBaseProvider>
 
     // <View style={styles.container}>
     //   <Text style={styling.header}>Welkom!</Text>

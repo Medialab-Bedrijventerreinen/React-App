@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, StatusBar, Button } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
+import { Button } from "native-base";
 import { useStyling } from '../styles/style.js';
 
 //The Home component to load in and exporting it for the navigation
@@ -19,7 +20,7 @@ export const Welcome = ({navigation}) => {
         <Button
           title="Go to Home"
           onPress={() => navigation.navigate('Home')}
-        />
+        >Start</Button>
       </View>
     </SafeAreaView>
 
