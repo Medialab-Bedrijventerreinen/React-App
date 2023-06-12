@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //Load all components in for the navigation 
 import { Welcome } from '../components/Welcome.js'
 import { Home } from '../components/Home.js'
+import { Themes } from '../components/Themes.js'
 
 const Tab = createBottomTabNavigator ();
 
@@ -29,6 +30,19 @@ export function Navigation() {
       <Tab.Screen 
         name="Home" 
         component={Home}
+        options={{
+          headerStyle: {
+            backgroundColor: 'white',
+          },
+          headerTintColor: 'black',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} 
+      />
+      <Tab.Screen 
+        name="Themes" 
+        component={Themes}
         options={{
           headerStyle: {
             backgroundColor: 'white',

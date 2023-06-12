@@ -4,24 +4,19 @@ import { Button } from "native-base";
 import { useStyling } from '../styles/style.js';
 
 //The Home component to load in and exporting it for the navigation
-export const Home = ({navigation}) => {
+export const Themes = ({navigation}) => {
   const styling = useStyling;
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
-        <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Homepage</Text>
+        <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Themes</Text>
         <Button
-          title="Themes"
-          onPress={() => navigation.navigate('Themes')}
-        >Thema's</Button>
+          title="Go to Welcome"
+          onPress={() => navigation.navigate('Home')}
+        >Go back</Button>
       </View>
     </SafeAreaView>
-
-    // <View style={styles.container}>
-    //   <Text style={styling.header}>Homepage</Text>
-    //   <StatusBar style="auto" />
-    // </View>
   );
 }
 
