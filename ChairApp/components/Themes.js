@@ -11,7 +11,7 @@ export const Themes = ({navigation}) => {
   return (
       <LinearGradient
         // Background Linear Gradient
-        colors={['#EAC7B3', 'transparent']}
+        colors={['#EAC7B3', '#FBF4F0']}
         style={[styles.container, styles.background]}
       >
         <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Thema's</Text>
