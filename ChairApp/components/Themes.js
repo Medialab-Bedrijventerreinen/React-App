@@ -14,6 +14,7 @@ export const Themes = ({navigation}) => {
         colors={['#EAC7B3', '#FBF4F0']}
         style={[styles.container, styles.background]}
       >
+        <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Naar Home</Text>
         <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Thema's</Text>
         <Button
           title="Go to Welcome"
@@ -27,12 +28,81 @@ export const Themes = ({navigation}) => {
                 </Center>
                 <Text>Hemelse Sereniteit</Text>
             </Flex>
-            <Center size="16" bg="primary.200" _text={{color: "coolGray.800"}}>
-                200
-            </Center>
-            <Center size="16" bg="primary.300" _text={{color: "coolGray.800"}}>
-                300
-            </Center>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/energieke_landschappen.svg')} style={styles.image} />
+                </Center>
+                <Text>Energieke Landschappen</Text>
+            </Flex>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/magisch_stadsbos.svg')} style={styles.image} />
+                </Center>
+                <Text>Magisch Stadsbos</Text>
+            </Flex>
+        </Flex>
+
+        <Flex direction="row" mb="2.5" mt="1.5">
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/revitaliserende_energie.svg')} style={styles.image} />
+                </Center>
+                <Text>Revitaliserende Energie</Text>
+            </Flex>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/ontdek_de_wereld_nabij.svg')} style={styles.image} />
+                </Center>
+                <Text>Ontdek de wereld nabij</Text>
+            </Flex>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/utopia.svg')} style={styles.image} />
+                </Center>
+                <Text>Utopia</Text>
+            </Flex>
+        </Flex>
+
+        <Flex direction="row" mb="2.5" mt="1.5">
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/hemelse_sereniteit.svg')} style={styles.image} />
+                </Center>
+                <Text>Hemelse Sereniteit</Text>
+            </Flex>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/energieke_landschappen.svg')} style={styles.image} />
+                </Center>
+                <Text>Energieke Landschappen</Text>
+            </Flex>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/magisch_stadsbos.svg')} style={styles.image} />
+                </Center>
+                <Text>Magisch Stadsbos</Text>
+            </Flex>
+        </Flex>
+
+        <Flex direction="row" mb="2.5" mt="1.5">
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/revitaliserende_energie.svg')} style={styles.image} />
+                </Center>
+                <Text>Revitaliserende Energie</Text>
+            </Flex>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/ontdek_de_wereld_nabij.svg')} style={styles.image} />
+                </Center>
+                <Text>Ontdek de wereld nabij</Text>
+            </Flex>
+            <Flex direction="col" mb="2.5" mt="1.5">
+                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                    <Image source={require('../assets/images/utopia.svg')} style={styles.image} />
+                </Center>
+                <Text>Utopia</Text>
+            </Flex>
         </Flex>
       </LinearGradient>
   );
