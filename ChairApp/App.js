@@ -37,6 +37,9 @@ export default function App() {
           backgroundColor: '#7EA796',
           color: '#E5EDEA',
           fontFamily: 'Quicksand-500', //Werkt op de een of andere manier niet
+          borderRadius: 10,
+          height: 52,
+          width: 160,
         },
       },
     }
