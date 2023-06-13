@@ -20,7 +20,7 @@ export const Smell = ({ navigation }) => {
         </Button>
       </Box>
       <View style={styles.container}>
-        <Text style={styling.header}>Geluid</Text>
+        <Text style={styling.header}>Geur</Text>
         <Box alignItems="center" w="100%">
           <Slider
             w="3/4"
