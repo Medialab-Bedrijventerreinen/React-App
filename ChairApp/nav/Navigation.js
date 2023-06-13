@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Welcome } from '../components/Welcome.js'
 import { Home } from '../components/Home.js'
 import { Themes } from '../components/Themes.js'
+import { Sound } from '../components/Sound.js'
 
 const Tab = createBottomTabNavigator ();
 
@@ -43,6 +44,19 @@ export function Navigation() {
       <Tab.Screen 
         name="Themes" 
         component={Themes}
+        options={{
+          headerStyle: {
+            backgroundColor: 'white',
+          },
+          headerTintColor: 'black',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} 
+      />
+      <Tab.Screen 
+        name="Sound" 
+        component={Sound}
         options={{
           headerStyle: {
             backgroundColor: 'white',
