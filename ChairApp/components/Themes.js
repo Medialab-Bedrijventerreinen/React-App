@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { StyleSheet, Text, Image, View } from 'react-native';
-import { Button, Flex, Center, ScrollView } from "native-base";
+import { StyleSheet, Text, Image, View, useState } from 'react-native';
+import { Button, Flex, Center, ScrollView, Modal } from "native-base";
 import { useStyling } from '../styles/style.js';
 import { LinearGradient } from 'expo-linear-gradient';
 
 //The Home component to load in and exporting it for the navigation
 export const Themes = ({navigation}) => {
   const styling = useStyling;
+
+  const [showModal, setShowModal] = React.useState(false);
 
   return (
       <LinearGradient
@@ -19,8 +21,8 @@ export const Themes = ({navigation}) => {
             <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Thema's</Text>
             <Button
             title="Go to Welcome"
-            onPress={() => navigation.navigate('Home')}
-            >Go back</Button>
+            onPress={() => setShowModal(true)}
+            >Test Modal</Button>
 
             <ScrollView w="300" h="600">
                 <Flex direction="row" mb="2.5" mt="1.5">
@@ -32,6 +34,19 @@ export const Themes = ({navigation}) => {
                             <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Hemelse Sereniteit</Text>
                         </Center>
                     </Flex>
+                    <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+                        <Modal.Content maxWidth="400px">
+                            <Modal.CloseButton />
+                            <Modal.Header>Modal Header</Modal.Header>
+                            <Modal.Body>
+                                <Text>Test text</Text>
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <Text>Modal Footer</Text>
+                            </Modal.Footer>
+                        </Modal.Content>
+                    </Modal>
+
                     <Flex direction="col" mb="2.5" mt="1.5" w="100">
                         <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
                             <Image source={require('../assets/images/energieke_landschappen.svg')} style={styles.image} />
