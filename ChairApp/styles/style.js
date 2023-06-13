@@ -139,5 +139,5 @@ export const useStyling = StyleSheet.create({
     
     center: {
         textAlign: 'center',
-    }
+    },
 });

@@ -16,22 +16,22 @@ const TabBar = ({state, navigation}) => {
     }
 
     //Return bottom navigator 
-    return (
-        <View style={{ position: 'absolute', bottom: 0, width: width}}>
-        <View
-            style={[styles.container,{ backgroundColor: 'white' }]}>
-            {routes.map((route, index) => (
-            <Tab
-                styles={styles.tab}
-                tab={route}
-                onPress={() => handlePress(route.name, index)}
-                color='white'
-                key={route.key}
-            />
-            ))}
-        </View>
-        </View>
-    )
+    // return (
+    //     <View style={{ position: 'absolute', bottom: 0, width: width}}>
+    //     <View
+    //         style={[styles.container,{ backgroundColor: 'white' }]}>
+    //         {routes.map((route, index) => (
+    //         <Tab
+    //             styles={styles.tab}
+    //             tab={route}
+    //             onPress={() => handlePress(route.name, index)}
+    //             color='white'
+    //             key={route.key}
+    //         />
+    //         ))}
+    //     </View>
+    //     </View>
+    // )
 };
 
 //Styling for the TabBar component
