@@ -24,7 +24,7 @@ export const Welcome = ({navigation}) => {
         Om behalve lekker in de Eco Lounge chair neer te ploffen maak ook gebruik van alle functies die de stoel te bieden heeft
       </Text>
       <Button
-        onPress={() => navigation.navigate("Home")}
+        onPress={() => {navigation.navigate("Home"); SendRaspberryRequest()}}
       >
         Start
       </Button>
@@ -47,3 +47,21 @@ const styles = StyleSheet.create({
     bottom: 0,
   },
 });
+
+const SendRaspberryRequest = () => {
+  
+  // fetch("192.168.137.146:8080", {
+  //   method: 'GET',
+  //   mode: 'no-cors'
+  // })
+  // .then((response) => {
+  //   console.log("[MICRO CONTROLLER] successfully connected with raspberry")
+  // })
+  fetch("http://192.168.137.146:8080", {
+    method: "POST",
+    mode: 'no-cors',
+    headers: {},
+    body: "on"
+  }).then(() => console.log("[MICRO CONTROLLER] request successful, closing connecton"))
+  .catch(() => console.log("[MICRO CONTROLLER] something is wrong with your connection"))
+}
