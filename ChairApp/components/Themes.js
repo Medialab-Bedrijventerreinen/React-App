@@ -12,7 +12,6 @@ export const Themes = ({navigation}) => {
 
   return (
       <LinearGradient
-        // Background Linear Gradient
         colors={['#EAC7B3', '#FBF4F0']}
         style={[styles.container, styles.background]}
       >
@@ -24,6 +23,24 @@ export const Themes = ({navigation}) => {
             onPress={() => setShowModal(true)}
             >Test Modal</Button>
 
+                    <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+                        <Modal.Content width="350px">
+                            <LinearGradient
+                                colors={['#B2CAC0', '#E5EDEA']}
+                                style={[styles.container, styles.background]}
+                            >
+                                <Modal.CloseButton />
+                                <Modal.Body>
+                                    <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
+                                    <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Verborgen groen</Text>
+                                    <View style={styles.center}>
+                                        <Button>Kies dit thema</Button>
+                                    </View>
+                                </Modal.Body>
+                            </LinearGradient>
+                        </Modal.Content>
+                    </Modal>
+
             <ScrollView w="300" h="600">
                 <Flex direction="row" mb="2.5" mt="1.5">
                     <Flex direction="col" mb="2.5" mt="1.5" w="100">
@@ -34,18 +51,6 @@ export const Themes = ({navigation}) => {
                             <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Hemelse Sereniteit</Text>
                         </Center>
                     </Flex>
-                    <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-                        <Modal.Content maxWidth="400px">
-                            <Modal.CloseButton />
-                            <Modal.Header>Modal Header</Modal.Header>
-                            <Modal.Body>
-                                <Text>Test text</Text>
-                            </Modal.Body>
-                            <Modal.Footer>
-                                <Text>Modal Footer</Text>
-                            </Modal.Footer>
-                        </Modal.Content>
-                    </Modal>
 
                     <Flex direction="col" mb="2.5" mt="1.5" w="100">
                         <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
