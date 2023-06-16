@@ -140,4 +140,8 @@ export const useStyling = StyleSheet.create({
     center: {
         textAlign: 'center',
     },
+
+    sliderThumb: {
+        backgroundColor: '#E5EDEA',
+    }
 });
