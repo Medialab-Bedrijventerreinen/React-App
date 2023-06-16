@@ -19,12 +19,11 @@ export const Home = ({navigation}) => {
         title="Themes"
         onPress={() => navigation.navigate('Themes')}
       >Thema's</Button>
+      <Button
+        title="Themes"
+        onPress={() => navigation.navigate('Sound')}
+      >Geluid</Button>
     </LinearGradient>
-
-    // <View style={styles.container}>
-    //   <Text style={styling.header}>Homepage</Text>
-    //   <StatusBar style="auto" />
-    // </View>
   );
 }
 

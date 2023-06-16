@@ -30,7 +30,7 @@ export const Themes = ({navigation}) => {
             </View>
             <View style={styles.center}>
                 <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular', marginTop: "25px", marginBottom: "25px" }]}>Thema's</Text>
-                <ScrollView w="300" h="600">
+                <ScrollView w="300" h="555">
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal1(true)}>
