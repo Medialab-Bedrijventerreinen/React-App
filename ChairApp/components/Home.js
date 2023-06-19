@@ -12,11 +12,11 @@ export const Home = ({ navigation }) => {
     <LinearGradient
       // Background Linear Gradient
       colors={['#EAC7B3', '#FBF4F0']}
-      style={[styles.container, styles.background]}
+      style={[styles.container, styles.background, {marginBottom: 200}]}
     >
       {/* <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Homepage</Text> */}
 
-      <Flex direction="row" mb="2.5" mt="1.5" w={344}>
+      <Flex direction="row" mb="10" mt="1.5" w={344}>
         <View style={styles.container} w={154}>
           <Button
             style={[styling.homeButtonTop]}
@@ -43,7 +43,7 @@ export const Home = ({ navigation }) => {
         </View>
       </Flex>
 
-      <Flex direction="row" mb="2.5" mt="1.5" w={360}>
+      <Flex direction="row" mb="5" mt="1.5" w={360}>
         <View style={styles.container} w={150}>
           <Button
             style={[styling.homeButton]}
