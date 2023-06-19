@@ -166,4 +166,8 @@ export const useStyling = StyleSheet.create({
         width: 56,
         height: 56,
     },
+    homeButtonText: {
+        color: "#E5EDEA",
+        marginTop: 16,
+    },
 });

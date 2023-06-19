@@ -43,31 +43,50 @@ export const Home = ({ navigation }) => {
         </View>
       </Flex>
 
-      <Flex direction="row" mb="2.5" mt="1.5">
-        <Button
-          style={[styling.homeButton]}
-          title="Sound"
-          onPress={() => navigation.navigate('Sound')}
-        >Geluiden</Button>
-        <Button
-          style={[styling.homeButton]}
-          title="Smell"
-        >Geuren</Button>
-        <Button
-          style={[styling.homeButton]}
-          title="Light"
-        >Licht</Button>
+      <Flex direction="row" mb="2.5" mt="1.5" w={360}>
+        <View style={styles.container} w={150}>
+          <Button
+            style={[styling.homeButton]}
+            title="Sound"
+            onPress={() => navigation.navigate('Sound')}
+          ><Image source={require('../assets/images/geluid_knop.svg')} style={styling.homeButtonIcon} /></Button>
+          <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluiden</Text>
+        </View>
+        <View style={styles.container} w={150}>
+          <Button
+            style={[styling.homeButton]}
+            title="Smell"
+            // onPress={() => navigation.navigate('Sound')}
+          ><Image source={require('../assets/images/geur_knop.svg')} style={styling.homeButtonIcon} /></Button>
+          <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geuren</Text>
+        </View>
+        <View style={styles.container} w={150}>
+          <Button
+            style={[styling.homeButton]}
+            title="Light"
+            // onPress={() => navigation.navigate('Sound')}
+          ><Image source={require('../assets/images/licht_knop.svg')} style={styling.homeButtonIcon} /></Button>
+          <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
+        </View>
       </Flex>
 
       <Flex direction="row" mb="2.5" mt="1.5">
-        <Button
-          style={[styling.homeButton]}
-          title="Climate"
-        >Klimaat</Button>
-        <Button
-          style={[styling.homeButton]}
-          title="Chair functions"
-        >Stoel functies</Button>
+        <View style={styles.container} w={150}>
+          <Button
+            style={[styling.homeButton]}
+            title="Climate"
+            // onPress={() => navigation.navigate('Sound')}
+          ><Image source={require('../assets/images/klimaat_knop.svg')} style={styling.homeButtonIcon} /></Button>
+          <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Klimaat</Text>
+        </View>
+        <View style={styles.container} w={150}>
+          <Button
+            style={[styling.homeButton]}
+            title="Chair functions"
+            // onPress={() => navigation.navigate('Sound')}
+          ><Image source={require('../assets/images/stoel_functies_knop.svg')} style={styling.homeButtonIcon} /></Button>
+          <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Stoel functies</Text>
+        </View>
       </Flex>
     </LinearGradient>
   );
