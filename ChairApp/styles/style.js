@@ -143,5 +143,31 @@ export const useStyling = StyleSheet.create({
 
     sliderThumb: {
         backgroundColor: '#E5EDEA',
-    }
+    },
+
+    homeButtonTop: {
+        width: 154,
+        height: 48,
+    },
+    homeButtonTopIcon: {
+        width: 24,
+        height: 24,
+    },
+    homeButtonTopText: {
+        color: "#E5EDEA",
+        marginTop: 3,
+        marginLeft: 8,
+    },
+    homeButton: {
+        width: 87,
+        height: 97,
+    },
+    homeButtonIcon: {
+        width: 56,
+        height: 56,
+    },
+    homeButtonText: {
+        color: "#E5EDEA",
+        marginTop: 16,
+    },
 });
