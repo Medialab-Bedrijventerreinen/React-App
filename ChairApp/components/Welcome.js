@@ -19,14 +19,16 @@ export const Welcome = ({navigation}) => {
       style={[styles.container, styles.background]}
     >
       <Text style={[styling.h1, styling.colorBlack, {fontFamily: 'Cookie-Regular'}]}>Welkom!</Text>
-      <Text style={[styling.paragraph, styling.colorBlack, styling.center, {fontFamily: 'Quicksand-500'}]}>
-        Vul de 4-cijferige code in, deze is te vinden in de binnenkant van de
-        stoel.
-      </Text>
+      <View style={[styles.textContainer, {marginTop: "28px"}]}>
+        <Text style={[styling.paragraph, styling.colorBlack, styling.center, {fontFamily: 'Quicksand-500'}]}>
+          Vul de 4-cijferige code in, deze is te vinden in de binnenkant van de
+          stoel.
+        </Text>
+      </View>
       <Flex direction="row" mb="10" mt="8" w={344} style={styles.container}>
         <Input 
           mx="3" 
-          w="10%"
+          style={[styling.inputHome, styling.colorBlack, {fontFamily: 'Quicksand-500'}]}
           maxLength={1}
           keyboardType="numeric"
           returnKeyType="next"
@@ -34,7 +36,7 @@ export const Welcome = ({navigation}) => {
         ></Input>
         <Input 
           mx="3" 
-          w="10%"
+          style={[styling.inputHome, {fontFamily: 'Quicksand-500'}]}
           maxLength={1}
           keyboardType="numeric"
           returnKeyType="next"
@@ -43,7 +45,7 @@ export const Welcome = ({navigation}) => {
         ></Input>
         <Input 
           mx="3" 
-          w="10%"
+          style={[styling.inputHome, {fontFamily: 'Quicksand-500'}]}
           maxLength={1}
           keyboardType="numeric"
           returnKeyType="next"
@@ -52,19 +54,21 @@ export const Welcome = ({navigation}) => {
         ></Input>
         <Input 
           mx="3" 
-          w="10%"
+          style={[styling.inputHome, {fontFamily: 'Quicksand-500'}]}
           maxLength={1}
           keyboardType="numeric"
           ref={ref_input4}
         ></Input>
       </Flex>
-      <Text style={[styling.paragraph, styling.colorBlack, styling.center, {fontFamily: 'Quicksand-500'}]}>
-        Om behalve lekker in de Eco Lounge chair neer te ploffen maak ook gebruik van alle functies die de stoel te bieden heeft
-      </Text>
+      <View style={[styles.textContainer, {marginBottom: "80px"}]}>
+        <Text style={[styling.paragraph, styling.colorBlack, styling.center, {fontFamily: 'Quicksand-500'}]}>
+          Om behalve lekker in de Eco Lounge chair neer te ploffen maak ook gebruik van alle functies die de stoel te bieden heeft
+        </Text>
+      </View>
       <Button
         onPress={() => navigation.navigate("Home")}
       >
-        Start
+        <Text style={[styling.colorTwoLighter, styling.paragraphSemibold, {fontFamily: 'Quicksand-500'}]}>Start</Text>
       </Button>
     </LinearGradient>
   );
@@ -81,5 +85,8 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     bottom: 0,
+  },
+  textContainer: {
+    width: 282,
   },
 });

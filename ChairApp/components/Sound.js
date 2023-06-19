@@ -309,6 +309,8 @@ const styles = StyleSheet.create({
     powerButton: {
         width: 50,
         height: 60,
+        backgroundColor: '#7EA796',
+        borderRadius: 10,
     },
     volumeIcon: {
         width: 24,
