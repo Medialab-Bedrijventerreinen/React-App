@@ -5,7 +5,7 @@ import { useStyling } from '../styles/style.js';
 import { LinearGradient } from 'expo-linear-gradient';
 
 //The Home component to load in and exporting it for the navigation
-export const Themes = ({navigation}) => {
+export const Themes = ({ navigation }) => {
     const styling = useStyling;
 
     const [showModal1, setShowModal1] = React.useState(false);
@@ -38,10 +38,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/hemelse_sereniteit.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Hemelse Sereniteit</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Hemelse Sereniteit</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal1} onClose={() => setShowModal1(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal1} onClose={() => setShowModal1(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -49,12 +49,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Hemelse Sereniteit</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Hemelse Sereniteit</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#6866D6"></Center>
                                                             <Center width="31px" height="43px" bg="#171D5D"></Center>
@@ -63,7 +63,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -75,9 +75,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -85,8 +85,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -100,10 +102,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/energieke_landschappen.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Energieke Landschappen</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Energieke Landschappen</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal2} onClose={() => setShowModal2(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal2} onClose={() => setShowModal2(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -111,12 +113,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Energieke Landschappen</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Energieke Landschappen</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#98FA87"></Center>
                                                             <Center width="31px" height="43px" bg="#49961D"></Center>
@@ -125,7 +127,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -137,9 +139,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -147,8 +149,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -162,10 +166,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/magisch_stadsbos.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Magisch Stadsbos</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Magisch Stadsbos</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal3} onClose={() => setShowModal3(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal3} onClose={() => setShowModal3(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -173,12 +177,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Magisch Stadsbos</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Magisch Stadsbos</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#9FFFB3"></Center>
                                                             <Center width="31px" height="43px" bg="#3BADBD"></Center>
@@ -187,7 +191,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -199,9 +203,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -209,8 +213,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -226,10 +232,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/revitaliserende_energie.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Revitaliserende Energie</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Revitaliserende Energie</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal4} onClose={() => setShowModal4(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal4} onClose={() => setShowModal4(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -237,12 +243,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Revitaliserende Energie</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Revitaliserende Energie</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#F9FC8B"></Center>
                                                             <Center width="31px" height="43px" bg="#FCC300"></Center>
@@ -251,7 +257,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -263,9 +269,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -273,8 +279,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -288,10 +296,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/ontdek_de_wereld_nabij.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Ontdek de wereld nabij</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Ontdek de wereld nabij</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal5} onClose={() => setShowModal5(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal5} onClose={() => setShowModal5(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -299,12 +307,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Ontdek de wereld nabij</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Ontdek de wereld nabij</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#7EC5DE"></Center>
                                                             <Center width="31px" height="43px" bg="#00A9DE"></Center>
@@ -313,7 +321,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -325,9 +333,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -335,8 +343,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -350,10 +360,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/utopia.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Utopia verborgen groen</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Utopia verborgen groen</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal6} onClose={() => setShowModal6(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal6} onClose={() => setShowModal6(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -361,12 +371,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Utopia verborgen groen</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Utopia verborgen groen</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#F0699E"></Center>
                                                             <Center width="31px" height="43px" bg="#F00069"></Center>
@@ -375,7 +385,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -387,9 +397,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -397,8 +407,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -413,10 +425,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/hemelse_sereniteit.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Hemelse Sereniteit</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Hemelse Sereniteit</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal1} onClose={() => setShowModal1(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal1} onClose={() => setShowModal1(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -424,12 +436,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Hemelse Sereniteit</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Hemelse Sereniteit</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#6866D6"></Center>
                                                             <Center width="31px" height="43px" bg="#171D5D"></Center>
@@ -438,7 +450,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -450,9 +462,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -460,8 +472,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -475,10 +489,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/energieke_landschappen.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Energieke Landschappen</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Energieke Landschappen</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal2} onClose={() => setShowModal2(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal2} onClose={() => setShowModal2(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -486,12 +500,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Energieke Landschappen</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Energieke Landschappen</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#98FA87"></Center>
                                                             <Center width="31px" height="43px" bg="#49961D"></Center>
@@ -500,7 +514,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -512,9 +526,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -522,8 +536,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -537,10 +553,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/magisch_stadsbos.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Magisch Stadsbos</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Magisch Stadsbos</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal3} onClose={() => setShowModal3(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal3} onClose={() => setShowModal3(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -548,12 +564,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Magisch Stadsbos</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Magisch Stadsbos</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#9FFFB3"></Center>
                                                             <Center width="31px" height="43px" bg="#3BADBD"></Center>
@@ -562,7 +578,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -574,9 +590,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -584,8 +600,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -601,10 +619,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/revitaliserende_energie.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Revitaliserende Energie</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Revitaliserende Energie</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal4} onClose={() => setShowModal4(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal4} onClose={() => setShowModal4(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -612,12 +630,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Revitaliserende Energie</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Revitaliserende Energie</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#F9FC8B"></Center>
                                                             <Center width="31px" height="43px" bg="#FCC300"></Center>
@@ -626,7 +644,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -638,9 +656,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -648,8 +666,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -663,10 +683,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/ontdek_de_wereld_nabij.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Ontdek de wereld nabij</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Ontdek de wereld nabij</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal5} onClose={() => setShowModal5(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal5} onClose={() => setShowModal5(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -674,12 +694,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Ontdek de wereld nabij</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Ontdek de wereld nabij</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#7EC5DE"></Center>
                                                             <Center width="31px" height="43px" bg="#00A9DE"></Center>
@@ -688,7 +708,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -700,9 +720,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -710,8 +730,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>
@@ -725,10 +747,10 @@ export const Themes = ({navigation}) => {
                                     <Image source={require('../assets/images/utopia.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
-                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Utopia verborgen groen</Text>
+                                    <Text style={[styling.paragraphSmaller, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Utopia verborgen groen</Text>
                                 </Center>
                             </TouchableOpacity>
-                            <Modal isOpen={showModal6} onClose={() => setShowModal6(false)} _backdrop={{bg: "#393939"}}>
+                            <Modal isOpen={showModal6} onClose={() => setShowModal6(false)} _backdrop={{ bg: "#393939" }}>
                                 <Modal.Content width="348px">
                                     <LinearGradient
                                         colors={['#B2CAC0', '#E5EDEA']}
@@ -736,12 +758,12 @@ export const Themes = ({navigation}) => {
                                     >
                                         <Modal.CloseButton />
                                         <Modal.Body>
-                                            <Text style={[styling.h5, styling.colorBlack, {fontFamily: "Cookie-Regular"}]}>Thema</Text>
-                                            <Text style={[styling.paragraphSmall, styling.colorBlack, {fontFamily: "Quicksand-500"}]}>Utopia verborgen groen</Text>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <Text style={[styling.h5, styling.colorBlack, { fontFamily: "Cookie-Regular" }]}>Thema</Text>
+                                            <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: "Quicksand-500" }]}>Utopia verborgen groen</Text>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Flex direction="row" style={styles.center} mb="1.5" mt="1.5" w="297">
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Licht</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center width="31px" height="43px" bg="#F0699E"></Center>
                                                             <Center width="31px" height="43px" bg="#F00069"></Center>
@@ -750,7 +772,7 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                     <Spacer />
                                                     <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geluid</Text>
+                                                        <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geluid</Text>
                                                         <Flex direction="row" mb="2.5" mt="1.5">
                                                             <Center>
                                                                 <Image source={require('../assets/images/bird.svg')} style={styles.imageModal} />
@@ -762,9 +784,9 @@ export const Themes = ({navigation}) => {
                                                     </Center>
                                                 </Flex>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "20px"}]}>
+                                            <View style={[styles.center, { marginTop: "20px" }]}>
                                                 <Center width="130" height="95" borderRadius="10" bg="#FFFFFF">
-                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500'}]}>Geur</Text>
+                                                    <Text style={[styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geur</Text>
                                                     <Flex direction="row" mb="2.5" mt="1.5">
                                                         <Center>
                                                             <Image source={require('../assets/images/trees.svg')} style={styles.imageModal} />
@@ -772,8 +794,10 @@ export const Themes = ({navigation}) => {
                                                     </Flex>
                                                 </Center>
                                             </View>
-                                            <View style={[styles.center, {marginTop: "30px", marginBottom: "9px"}]}>
-                                                <Button>Kies dit thema</Button>
+                                            <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
+                                                <Button>
+                                                    <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
+                                                </Button>
                                             </View>
                                         </Modal.Body>
                                     </LinearGradient>

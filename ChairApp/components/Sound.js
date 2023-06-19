@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, Image, View, TouchableOpacity, useState } from 'react-native';
+import { StyleSheet, Text, Image, View, TouchableOpacity } from 'react-native';
 import { Button, Flex, Center, ScrollView, Slider, Spacer } from "native-base";
 import { useStyling } from '../styles/style.js';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -309,6 +309,8 @@ const styles = StyleSheet.create({
     powerButton: {
         width: 50,
         height: 60,
+        backgroundColor: '#7EA796',
+        borderRadius: 10,
     },
     volumeIcon: {
         width: 24,

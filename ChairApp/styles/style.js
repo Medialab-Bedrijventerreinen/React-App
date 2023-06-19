@@ -136,6 +136,16 @@ export const useStyling = StyleSheet.create({
     colorWhiteDarker: {
         color: '#666666',
     },
+
+    inputHome: {
+        border: 'none',
+        borderRadius: 5,
+        backgroundColor: '#E5EDEA',
+        width: 36,
+        height: 48,
+        textAlign: 'center',
+        fontSize: 20,
+    },
     
     center: {
         textAlign: 'center',
