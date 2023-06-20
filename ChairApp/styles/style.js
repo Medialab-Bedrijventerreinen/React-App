@@ -172,6 +172,9 @@ export const useStyling = StyleSheet.create({
         width: 87,
         height: 97,
     },
+    buttonDisabled: {
+        backgroundColor: '#838C88',
+    },
     homeButtonIcon: {
         width: 56,
         height: 56,

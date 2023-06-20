@@ -36,7 +36,7 @@ export const Sound = ({ navigation }) => {
             </View>
             <View style={styles.center}>
                 <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular', marginTop: "25px" }]}>Geluid</Text>
-                <Button style={styles.powerButton} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
+                <Button style={styles.powerButton} shadow="7" onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
                     <Image source={require('../assets/icons/power_button.svg')} style={styles.powerIcon} />
                 </Button>
                 <View style={{ marginTop: "30px" }}>
@@ -49,7 +49,7 @@ export const Sound = ({ navigation }) => {
                                 style={[styles.container, styles.background]}
                             />
                         </Slider.Track>
-                        <Slider.Thumb w={30} h={30} style={styling.sliderThumb} />
+                        <Slider.Thumb w={30} h={30} style={styling.sliderThumb} shadow="4" />
                     </Slider>
                 </View>
                 <View w="3/5" style={{ marginBottom: "30px" }}>
@@ -62,8 +62,8 @@ export const Sound = ({ navigation }) => {
                 <ScrollView w="300" h="400">
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(true), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(true), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/trees.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -72,15 +72,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow1 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow1(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow1(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(true), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(true), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/regen.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -89,15 +89,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow2 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow2(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow2(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(true), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(true), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/storm.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -106,7 +106,7 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow3 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow3(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow3(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
@@ -116,8 +116,8 @@ export const Sound = ({ navigation }) => {
 
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(true), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(true), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/waterval.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -126,15 +126,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow4 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow4(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow4(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(true), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(true), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/maan_sterren.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -143,15 +143,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow5 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow5(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow5(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(true), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(true), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/zee.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -160,7 +160,7 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow6 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow6(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow6(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
@@ -170,8 +170,8 @@ export const Sound = ({ navigation }) => {
 
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                        <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(true), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(true), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/zee_storm.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -180,15 +180,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow7 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow7(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow7(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(true), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(true), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/bird.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -197,15 +197,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow8 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow8(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow8(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(true), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(true), setShouldShow10(false), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/uil.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -214,7 +214,7 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow9 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow9(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow9(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
@@ -224,8 +224,8 @@ export const Sound = ({ navigation }) => {
 
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(true), setShouldShow11(false), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(true), setShouldShow11(false), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/trees.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -234,15 +234,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow10 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow10(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow10(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(true), setShouldShow12(false)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(true), setShouldShow12(false) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/regen.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -251,15 +251,15 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow11 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow11(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow11(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>
                             ) : null}
                         </Flex>
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
-                            <TouchableOpacity style={[styles.underneath]} onPress={() => {setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(true)}}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                            <TouchableOpacity style={[styles.underneath]} onPress={() => { setShouldShow1(false), setShouldShow2(false), setShouldShow3(false), setShouldShow4(false), setShouldShow5(false), setShouldShow6(false), setShouldShow7(false), setShouldShow8(false), setShouldShow9(false), setShouldShow10(false), setShouldShow11(false), setShouldShow12(true) }}>
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/storm.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -268,7 +268,7 @@ export const Sound = ({ navigation }) => {
                             </TouchableOpacity>
                             {shouldShow12 ? (
                                 <View style={[styles.overlay]}>
-                                    <Button style={styles.playButton} onPress={() => setShouldShow12(false)}>
+                                    <Button style={styles.playButton} shadow="7" onPress={() => setShouldShow12(false)}>
                                         <Image source={require('../assets/icons/play_button.svg')} style={styles.playIcon} />
                                     </Button>
                                 </View>

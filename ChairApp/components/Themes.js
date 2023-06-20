@@ -34,7 +34,7 @@ export const Themes = ({ navigation }) => {
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal1(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/hemelse_sereniteit.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -86,7 +86,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -98,7 +98,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal2(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/energieke_landschappen.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -150,7 +150,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -162,7 +162,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal3(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/magisch_stadsbos.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -214,7 +214,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -228,7 +228,7 @@ export const Themes = ({ navigation }) => {
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal4(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/revitaliserende_energie.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -280,7 +280,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -292,7 +292,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal5(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/ontdek_de_wereld_nabij.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -344,7 +344,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -356,7 +356,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal6(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/utopia.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -408,7 +408,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -421,7 +421,7 @@ export const Themes = ({ navigation }) => {
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal1(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/hemelse_sereniteit.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -473,7 +473,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -485,7 +485,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal2(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/energieke_landschappen.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -537,7 +537,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -549,7 +549,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal3(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/magisch_stadsbos.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -601,7 +601,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -615,7 +615,7 @@ export const Themes = ({ navigation }) => {
                     <Flex direction="row" mb="2.5" mt="1.5">
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal4(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/revitaliserende_energie.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -667,7 +667,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -679,7 +679,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal5(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/ontdek_de_wereld_nabij.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -731,7 +731,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>
@@ -743,7 +743,7 @@ export const Themes = ({ navigation }) => {
 
                         <Flex direction="col" mb="2.5" mt="1.5" w="100">
                             <TouchableOpacity onPress={() => setShowModal6(true)}>
-                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0">
+                                <Center width="88" height="97" borderRadius="10" bg="#B2CAC0" shadow="7">
                                     <Image source={require('../assets/images/utopia.svg')} style={styles.image} />
                                 </Center>
                                 <Center style={styling.center} width="88">
@@ -795,7 +795,7 @@ export const Themes = ({ navigation }) => {
                                                 </Center>
                                             </View>
                                             <View style={[styles.center, { marginTop: "30px", marginBottom: "9px" }]}>
-                                                <Button>
+                                                <Button shadow="7">
                                                     <Text style={[styling.colorTwoLighter, styling.paragraphSmall, { fontFamily: 'Quicksand-500' }]}>Kies dit thema</Text>
                                                 </Button>
                                             </View>

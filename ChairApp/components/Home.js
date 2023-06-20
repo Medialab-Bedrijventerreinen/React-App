@@ -20,6 +20,7 @@ export const Home = ({ navigation }) => {
         <View style={styles.container} w={154}>
           <Button
             style={[styling.homeButtonTop]}
+            shadow="7"
             title="Themes"
             onPress={() => navigation.navigate('Themes')}
           >
@@ -32,7 +33,8 @@ export const Home = ({ navigation }) => {
         <View style={styles.container} w={154}>
           <Spacer />
           <Button
-            style={[styling.homeButtonTop]}
+            style={[styling.homeButtonTop, styling.buttonDisabled]}
+            shadow="7"
             title="Surrounding"
           >
             <Flex direction="row">
@@ -47,6 +49,7 @@ export const Home = ({ navigation }) => {
         <View style={styles.container} w={150}>
           <Button
             style={[styling.homeButton]}
+            shadow="7"
             title="Sound"
             onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/geluid_knop.svg')} style={styling.homeButtonIcon} /></Button>
@@ -54,7 +57,8 @@ export const Home = ({ navigation }) => {
         </View>
         <View style={styles.container} w={150}>
           <Button
-            style={[styling.homeButton]}
+            style={[styling.homeButton, styling.buttonDisabled]}
+            shadow="7"
             title="Smell"
             // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/geur_knop.svg')} style={styling.homeButtonIcon} /></Button>
@@ -62,7 +66,8 @@ export const Home = ({ navigation }) => {
         </View>
         <View style={styles.container} w={150}>
           <Button
-            style={[styling.homeButton]}
+            style={[styling.homeButton, styling.buttonDisabled]}
+            shadow="7"
             title="Light"
             // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/licht_knop.svg')} style={styling.homeButtonIcon} /></Button>
@@ -73,7 +78,8 @@ export const Home = ({ navigation }) => {
       <Flex direction="row" mb="2.5" mt="1.5">
         <View style={styles.container} w={150}>
           <Button
-            style={[styling.homeButton]}
+            style={[styling.homeButton, styling.buttonDisabled]}
+            shadow="7"
             title="Climate"
             // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/klimaat_knop.svg')} style={styling.homeButtonIcon} /></Button>
@@ -81,7 +87,8 @@ export const Home = ({ navigation }) => {
         </View>
         <View style={styles.container} w={150}>
           <Button
-            style={[styling.homeButton]}
+            style={[styling.homeButton, styling.buttonDisabled]}
+            shadow="7"
             title="Chair functions"
             // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/stoel_functies_knop.svg')} style={styling.homeButtonIcon} /></Button>
