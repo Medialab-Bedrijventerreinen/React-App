@@ -67,6 +67,7 @@ export const Welcome = ({navigation}) => {
       </View>
       <Button
         onPress={() => {navigation.navigate("Home"); SendRaspberryRequest()}}
+        shadow="7"
       >
         <Text style={[styling.colorTwoLighter, styling.paragraphSemibold, {fontFamily: 'Quicksand-500'}]}>Start</Text>
       </Button>
