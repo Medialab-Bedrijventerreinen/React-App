@@ -12,7 +12,7 @@ export const Home = ({ navigation }) => {
     <LinearGradient
       // Background Linear Gradient
       colors={['#EAC7B3', '#FBF4F0']}
-      style={[styles.container, styles.background, {marginBottom: 200}]}
+      style={[styles.container, styles.background, { marginBottom: 200 }]}
     >
       {/* <Text style={[styling.h1, styling.colorBlack, { fontFamily: 'Cookie-Regular' }]}>Homepage</Text> */}
 
@@ -43,6 +43,18 @@ export const Home = ({ navigation }) => {
             </Flex>
           </Button>
         </View>
+
+        <View style={styles.container} w={154}>
+          <Spacer />
+          <Button
+            onPress={() => { navigation.navigate("Home_custom"); }}
+            shadow="7"
+          ><Flex direction="row">
+              <Image source={require('../assets/images/omgeving_button.svg')} style={styling.homeButtonTopIcon} />
+              <Text style={styling.homeButtonTopText}>Alternatieve stijl</Text>
+            </Flex></Button>
+        </View>
+
       </Flex>
 
       <Flex direction="row" mb="5" mt="1.5" w={360}>
@@ -60,7 +72,7 @@ export const Home = ({ navigation }) => {
             style={[styling.homeButton, styling.buttonDisabled]}
             shadow="7"
             title="Smell"
-            // onPress={() => navigation.navigate('Sound')}
+          // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/geur_knop.svg')} style={styling.homeButtonIcon} /></Button>
           <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Geuren</Text>
         </View>
@@ -69,7 +81,7 @@ export const Home = ({ navigation }) => {
             style={[styling.homeButton, styling.buttonDisabled]}
             shadow="7"
             title="Light"
-            // onPress={() => navigation.navigate('Sound')}
+          // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/licht_knop.svg')} style={styling.homeButtonIcon} /></Button>
           <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Licht</Text>
         </View>
@@ -81,7 +93,7 @@ export const Home = ({ navigation }) => {
             style={[styling.homeButton, styling.buttonDisabled]}
             shadow="7"
             title="Climate"
-            // onPress={() => navigation.navigate('Sound')}
+          // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/klimaat_knop.svg')} style={styling.homeButtonIcon} /></Button>
           <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Klimaat</Text>
         </View>
@@ -90,10 +102,12 @@ export const Home = ({ navigation }) => {
             style={[styling.homeButton, styling.buttonDisabled]}
             shadow="7"
             title="Chair functions"
-            // onPress={() => navigation.navigate('Sound')}
+          // onPress={() => navigation.navigate('Sound')}
           ><Image source={require('../assets/images/stoel_functies_knop.svg')} style={styling.homeButtonIcon} /></Button>
           <Text style={[styling.homeButtonText, styling.paragraphSmall, styling.colorBlack, { fontFamily: 'Quicksand-500' }]}>Stoel functies</Text>
         </View>
+
+
       </Flex>
     </LinearGradient>
   );

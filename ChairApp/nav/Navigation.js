@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //Load all components in for the navigation 
 import { Welcome } from '../components/Welcome.js'
 import { Home } from '../components/Home.js'
+import { Home_custom } from '../components/Home_custom.js'
 import { Themes } from '../components/Themes.js'
 import { Sound } from '../components/Sound.js'
 
@@ -31,6 +32,19 @@ export function Navigation() {
       <Tab.Screen 
         name="Home" 
         component={Home}
+        options={{
+          headerStyle: {
+            backgroundColor: 'white',
+          },
+          headerTintColor: 'black',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} 
+      />
+      <Tab.Screen 
+        name="Home_custom" 
+        component={Home_custom}
         options={{
           headerStyle: {
             backgroundColor: 'white',
